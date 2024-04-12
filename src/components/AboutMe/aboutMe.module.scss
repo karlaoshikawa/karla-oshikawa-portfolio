@@ -1,0 +1,37 @@
+@import "../../style/variables.scss";
+
+.aboutMe_container {
+  max-width: 120rem;
+  display: flex;
+  padding: 5rem 0;
+  color: $text-color;
+
+  img {
+    width: 40rem;
+    height: auto;
+    border-radius: 1rem;
+  }
+
+  .aboutMe_information_box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5rem;
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+
+    h3 {
+      font-size: 3.6rem;
+      font-weight: 500;
+      color: $accent-color;
+      padding: 2rem 0 3rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+}

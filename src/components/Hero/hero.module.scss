@@ -1,0 +1,12 @@
+@import "../../style/variables.scss";
+
+.hero_container {
+  border-bottom: 3px solid;
+  border-image: $gradient-orange 1;
+  iframe {
+    padding-top: 5rem;
+    height: 100vh;
+    width: 100vw;
+    border: none;
+  }
+}
