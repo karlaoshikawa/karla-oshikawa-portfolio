@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
       <Header lang={locale} />
       <Hero />
       <AboutMe lang={locale} />
-      <ProjectList lang={locale} type="job"/>
+      <ProjectList lang={locale} type="course"/>
     </div>
   );
 };
