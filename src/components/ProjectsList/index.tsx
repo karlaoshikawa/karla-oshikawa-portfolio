@@ -16,26 +16,40 @@ const ProjectList: React.FC<ProjectListProps> = ({ lang, type }) => {
 
   return (
     <div className={style.projectList_container}>
-      {filteredProjects.map((project) => (
-        <div key={project.id} className={style.projectList_projectBox}>
-          <Image src={project.image} alt={project.name} />
-          <h2>{project.name}</h2>
-          <h4>Project Type:</h4>
-          <p>{project.dev}</p>
-          <h4>Stacks:</h4>
-          <p>{project.stacks}</p>
-          <div>
-            <SlGlobe />
-            <a href={project.url} target="_blank" rel="noopener noreferrer">
-              Deploy
-            </a>
+      <h2>{type}</h2>
+      <div className={style.projectList_projects_container}>
+        {filteredProjects.map((project) => (
+          <div key={project.id} className={style.projectList_projectBox}>
+            <Image src={project.image} alt={project.name} />
+            <div className={style.projectList_textBox}>
+              <h3>{project.name}</h3>
+              <div className={style.projectList_project_type}>
+                <p>Project Type:</p>
+                <h4>{project.dev}</h4>
+              </div>
+
+              <p>Stacks:</p>
+              <h4>{project.stacks.replace(/,/g, " |")}</h4>
+              <div>
+                <SlGlobe />
+                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                  Deploy
+                </a>
+              </div>
+              <div>
+                <VscGithub />
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Github
+                </a>
+              </div>
+            </div>
           </div>
-          <div>
-            <VscGithub />
-            <a href={project.github} target="_blank" rel="noopener noreferrer">Github</a>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

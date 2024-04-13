@@ -8,4 +8,12 @@
   width: 100vw;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+
+  .general_projects_box{
+    display:flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column; 
+    width: 90%;
+  }
 }

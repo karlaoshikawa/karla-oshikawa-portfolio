@@ -129,7 +129,7 @@ const projectsList: Project[] = [
   },
   {
     id: "p011",
-    name: "Challenge Oracle One - Decodificador de texto",
+    name: "Oracle One - Text decoder",
     image: oneDecodificador,
     type: "course",
     stacks: "css, html, javascript",
