@@ -1,0 +1,25 @@
+@import "../../style/variables.scss";
+
+.projectList_container {
+  display: flex;
+  flex-wrap: wrap;
+  color: $text-color;
+  justify-content: flex-start;
+  width: 90vw;
+  gap: 2rem;
+
+
+  .projectList_projectBox {
+    a {
+      text-decoration: none;
+      color: $text-color;
+    }
+
+    img {
+      width: 35rem;
+      height: auto;
+      border: 2px solid $accent-color;
+      border-radius: 1rem;
+    }
+  }
+}
