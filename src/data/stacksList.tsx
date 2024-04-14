@@ -1,0 +1,26 @@
+const stacksList = [
+  "Javascript",
+  "AWS - Practitioner Certificate",
+  "Java",
+  "node",
+  "POO",
+  "Express",
+  "Sequelize",
+  "Typescript",
+  "MSC",
+  "SOLID",
+  "React",
+  "Redux",
+  "Context API",
+  "Jest",
+  "RTL",
+  "HTML",
+  "CSS",
+  "Docker",
+  "MySQL",
+  "mongoDB",
+  "mongoose",
+  "C#",
+];
+
+export default stacksList;

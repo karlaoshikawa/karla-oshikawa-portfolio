@@ -29,22 +29,28 @@ const ProjectList: React.FC<ProjectListProps> = ({ lang, type }) => {
               </div>
 
               <p>Stacks:</p>
-              <h4>{project.stacks.replace(/,/g, " |")}</h4>
-              <div>
-                <SlGlobe />
-                <a href={project.url} target="_blank" rel="noopener noreferrer">
-                  Deploy
-                </a>
-              </div>
-              <div>
-                <VscGithub />
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Github
-                </a>
+              <h5>{project.stacks.replace(/,/g, " |")}</h5>
+              <div className={style.projectList_button_box}>
+                <div className={style.projectList_button}>
+                  <SlGlobe />
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Deploy
+                  </a>
+                </div>
+                <div className={style.projectList_button}>
+                  <VscGithub />
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Github
+                  </a>
+                </div>
               </div>
             </div>
           </div>
