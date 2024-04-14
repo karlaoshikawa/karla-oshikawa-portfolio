@@ -1,0 +1,70 @@
+@import "../../style/variables.scss";
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.container{
+  display: flex;
+  box-shadow: 6px 6px 8px $dark-shadow, -5px -5px 5px $light-shadow;
+  height: 10rem;
+  width: 100vw;
+}
+
+.slider {
+  background: $accent-color;
+  height: 8rem;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 98vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 2.5rem;
+  color: $background-color;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(
+    to right,
+    rgba(26, 26, 26, 1) 0%,
+    rgba(206, 212, 218, 0) 100%
+  );
+
+  content: "";
+  height: 80px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slide_track {
+  animation: scroll 100s linear infinite;
+  display: flex;
+  width: calc(300px * 25);
+}
+
+.slide {
+  width: 35rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}

@@ -21,6 +21,9 @@ const stacksList = [
   "mongoDB",
   "mongoose",
   "C#",
+  "Vite",
+  "NextJs",
+  "Nuxt",
 ];
 
 export default stacksList;
