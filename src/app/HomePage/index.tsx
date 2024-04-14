@@ -8,6 +8,7 @@ import Hero from "@/components/Hero";
 import ProjectList from "@/components/ProjectsList";
 import StackBar from "@/components/StacksBar";
 import SectionBar from "@/components/SectionBar";
+import Carousel from "@/components/Carousel";
 
 const HomePage: React.FC = () => {
   const pathname = usePathname();
@@ -27,6 +28,8 @@ const HomePage: React.FC = () => {
         <ProjectList lang={locale} type="study" />
         <ProjectList lang={locale} type="course" />
       </div>
+      <SectionBar section="Hobby" />
+      <Carousel/>
     </div>
   );
 };

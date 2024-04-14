@@ -1,0 +1,32 @@
+@import "../../style/variables.scss";
+
+.carousel_container {
+  display: flex;
+  width: 80vw;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+
+  .carousel_arrow {
+    font-size: 10rem;
+    color: $accent-color;
+    padding: 2rem;
+  }
+
+  .carousel_image_box {
+    box-shadow: 6px 6px 8px $dark-shadow, -5px -5px 5px $light-shadow;
+    border-radius: 1.6rem;
+    width: 84rem;
+    height: 64rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .carousel_image {
+      width: 80rem;
+      height: 60rem;
+      object-fit: contain;
+      border-radius: 1.6rem;
+    }
+  }
+}

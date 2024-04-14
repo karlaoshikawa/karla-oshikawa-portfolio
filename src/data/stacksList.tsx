@@ -1,4 +1,4 @@
-const stacksList = [
+const stacksList: string[] = [
   "Javascript",
   "AWS - Practitioner Certificate",
   "Java",

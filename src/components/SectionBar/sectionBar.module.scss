@@ -6,6 +6,8 @@
   margin: 4rem 0 1.5rem;
   justify-content: flex-start;
   align-items: center;
+  font-size: 2rem;
+  color: $accent-color;
 
   .sectionBar_box {
     box-shadow: 6px 6px 8px $dark-shadow, -5px -5px 5px $light-shadow;
@@ -23,5 +25,7 @@
     font-size: 3rem;
     text-transform: uppercase;
     color: $accent-color;
+    border-bottom: 2px solid $accent-color;
+    padding: 0 1rem;
   }
 }
