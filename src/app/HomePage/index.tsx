@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ProjectList from "@/components/ProjectsList";
 import StackBar from "@/components/StacksBar";
+import SectionBar from "@/components/SectionBar";
 
 const HomePage: React.FC = () => {
   const pathname = usePathname();
@@ -17,8 +18,10 @@ const HomePage: React.FC = () => {
     <div className={style.general}>
       <Header lang={locale} />
       <Hero />
+      <SectionBar section="about me" />
       <AboutMe lang={locale} />
-      <StackBar/>
+      <StackBar />
+      <SectionBar section="projects" />
       <div className={style.general_projects_box}>
         <ProjectList lang={locale} type="job" />
         <ProjectList lang={locale} type="study" />

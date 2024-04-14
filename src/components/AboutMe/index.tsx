@@ -70,7 +70,6 @@ const AboutMe: React.FC<AboutMeProps> = ({ lang }) => {
     <div className={style.aboutMe_container}>
       <Image src={karlaAvatar} alt="karla avatar manga style" />
       <div className={style.aboutMe_information_box}>
-        <h2>About Me</h2>
         <h3>{name}</h3>
         {text}
       </div>

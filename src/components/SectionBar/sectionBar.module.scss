@@ -1,0 +1,27 @@
+@import "../../style/variables.scss";
+
+.sectionBar_container {
+  display: flex;
+  width: 100vw;
+  margin: 4rem 0 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+
+  .sectionBar_box {
+    box-shadow: 6px 6px 8px $dark-shadow, -5px -5px 5px $light-shadow;
+    height: 8rem;
+    width: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5rem;
+    border-radius: 0 100px 100px 0;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $accent-color;
+  }
+}
