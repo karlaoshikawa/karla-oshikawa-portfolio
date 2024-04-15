@@ -24,11 +24,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2f333d;
-  color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
+  width: 100vw;
+  background-color:#000;
 }
 
 .stage {
@@ -37,8 +37,8 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   visibility: hidden;
   perspective: 2000px;
 }
@@ -51,7 +51,6 @@ body {
   position: relative;
   width: 100%;
   max-width: 1080px;
-  margin: 30px;
   transform-style: preserve-3d;
 }
 .hero:before, .logo__wrap:before {
@@ -129,22 +128,3 @@ body {
 
 }
 
-.logo__wrap {
-  position: absolute;
-  margin: 0;
-  pointer-events: none;
-}
-
-.logo {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  bottom: 0px;
-  min-width: 150px;
-  width: 20vw;
-  max-width: 300px;
-}
-
-.spark, #glow {
-  mix-blend-mode: screen;
-}

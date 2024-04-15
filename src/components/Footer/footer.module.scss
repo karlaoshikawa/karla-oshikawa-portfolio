@@ -1,0 +1,16 @@
+@import "../../style/variables.scss";
+
+.footer_container{
+  background-color: $background-box-color;
+  height: 5rem;
+  width: 100vw;
+  text-align: center;
+  border-top: 2px solid;
+  border-image: $gradient-orange 1;
+
+  h4{
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding-top: 2rem;
+  }
+}

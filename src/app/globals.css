@@ -10,5 +10,6 @@ html {
 
 body {
   background-color: #222;
-  
+  width: 100vw;
+  overflow-x: hidden;
 }

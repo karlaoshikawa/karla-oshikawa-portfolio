@@ -3,6 +3,8 @@
 .hero_container {
   border-bottom: 3px solid;
   border-image: $gradient-orange 1;
+  width: 100vw;
+
   iframe {
     padding-top: 5rem;
     height: 100vh;

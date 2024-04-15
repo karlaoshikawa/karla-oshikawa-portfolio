@@ -3,13 +3,14 @@ import { BsXDiamondFill } from "react-icons/bs";
 
 interface SectionBarProps {
   section: string;
+  sectionId: string;
 }
 
-const SectionBar: React.FC<SectionBarProps> = ({ section }) => {
+const SectionBar: React.FC<SectionBarProps> = ({ section, sectionId }) => {
   return (
-    <div className={style.sectionBar_container}>
+    <div className={style.sectionBar_container} id={sectionId}>
       <div className={style.sectionBar_box}>
-        <BsXDiamondFill/>
+        <BsXDiamondFill />
         <h2>{section}</h2>
       </div>
     </div>

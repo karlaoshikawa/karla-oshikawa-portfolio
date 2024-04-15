@@ -30,7 +30,7 @@ const Carousel: React.FC = () => {
         />
       </div>
       <FaArrowCircleRight
-        onClick={prevSlide}
+        onClick={nextSlide}
         className={style.carousel_arrow}
       />
     </div>

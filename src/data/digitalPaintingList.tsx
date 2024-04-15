@@ -10,9 +10,9 @@ import kimono from "@/images/digital-painting/kimono-girl.webp"
 import { StaticImageData } from "next/image";
 
 const digitalPaintingList: StaticImageData[] = [
+  megatron,
   turtle,
   lotus,
-  megatron,
   gtr35,
   mermaid,
   owl,
