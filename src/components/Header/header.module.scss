@@ -14,6 +14,20 @@
 
   background-color: $background-color;
 
+  a {
+    text-decoration: none;
+    color: $text-color;
+    font-size: 2rem;
+
+    &:hover {
+      color: $accent-color;
+    }
+
+    &:active {
+      scale: 1.1;
+    }
+  }
+
   h1 {
     padding-left: 0.7rem;
     font-weight: 400;
@@ -36,14 +50,33 @@
     }
   }
 
-  .header_flags_box {
-    padding-right: 3rem;
+  .header_rightItems_box {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
 
-    .header_flag {
-      width: 4rem;
-      height: 2.1rem;
-      object-fit: cover;
-      padding-right: 0.8rem;
+    .header_icons_box {
+      display: flex;
+      gap: 1.5rem;
+
+      .header_contact_icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .header_flags_box {
+      padding: 0.5rem 3rem 0 0;
+      
+
+      .header_flag {
+        width: 4rem;
+        height: 2.1rem;
+        object-fit: cover;
+        padding-right: 0.8rem;
+        
+      }
     }
   }
 }

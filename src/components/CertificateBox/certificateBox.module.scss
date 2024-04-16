@@ -31,7 +31,7 @@
       margin: auto;
       overflow: hidden;
       position: relative;
-      width: 29rem;
+      width: 30rem;
       align-items: center;
       justify-content: center;
       display: flex;
@@ -44,13 +44,13 @@
         background: linear-gradient(
           to right,
           rgba(34, 34, 34, 1) 0%,
-          rgba(26, 212, 218, 0) 100%
+          rgba(26, 26, 26, 0) 100%
         );
 
         content: "";
         height: 80px;
         position: absolute;
-        width: 4.5rem;
+        width: 6rem;
         z-index: 2;
       }
 

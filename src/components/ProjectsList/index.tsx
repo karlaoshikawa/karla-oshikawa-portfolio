@@ -3,16 +3,27 @@ import Image from "next/image";
 import style from "./projectList.module.scss";
 import { SlGlobe } from "react-icons/sl";
 import { VscGithub } from "react-icons/vsc";
+import { useState } from "react";
 
 interface ProjectListProps {
-  lang: string;
   type: string;
 }
 
-const ProjectList: React.FC<ProjectListProps> = ({ lang, type }) => {
+const ProjectList: React.FC<ProjectListProps> = ({ type }) => {
+  const [showIframeMap, setShowIframeMap] = useState<{ [id: string]: boolean }>(
+    {}
+  );
+
   const filteredProjects = projectsList
     .filter((project) => project.type === type)
     .reverse();
+  
+ const handleImageClick = (id: string) => {
+   setShowIframeMap((prevState) => ({
+     ...prevState,
+     [id]: !prevState[id], // Alterna o estado para o projeto com o id correspondente
+   }));
+ };
 
   return (
     <div className={style.projectList_container}>
@@ -20,7 +31,18 @@ const ProjectList: React.FC<ProjectListProps> = ({ lang, type }) => {
       <div className={style.projectList_projects_container}>
         {filteredProjects.map((project) => (
           <div key={project.id} className={style.projectList_projectBox}>
-            <Image src={project.image} alt={project.name} />
+            <Image
+              src={project.image}
+              alt={project.name}
+              onClick={() => handleImageClick(project.id)}
+            />
+            {/* {showIframeMap[project.id] && (
+              <iframe
+                src={project.url}
+                title={project.name}
+                className={style.projectList_project_iframe}
+              ></iframe>
+            )} */}
             <div className={style.projectList_textBox}>
               <h3>{project.name}</h3>
               <div className={style.projectList_project_type}>

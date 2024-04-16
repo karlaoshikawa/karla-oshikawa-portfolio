@@ -8,7 +8,7 @@
   padding: 3rem;
   border-bottom: 2px solid;
   border-image: $gradient-orange 1;
-  width: 100%;
+  width: 100vw;
 
   h2 {
     font-weight: 500;
@@ -42,7 +42,6 @@
       width: 35rem;
       background-color: $background-color;
       border-radius: 1rem;
-      overflow: hidden;
       box-shadow: 6px 6px 8px $dark-shadow, -5px -5px 5px $light-shadow;
       position: relative;
 
@@ -52,6 +51,17 @@
         border: 1px solid $text-color;
         border-radius: 1rem;
         margin: 1rem;
+      }
+
+      .projectList_project_iframe{
+        width: 80vw;
+        height: 80vh;
+
+        position: absolute;
+        z-index: 10;
+         top: 50%; /* Coloca o elemento no centro vertical */
+  left: 50%; /* Coloca o elemento no centro horizontal */
+  transform: translate(-50%, -50%); /* Centraliza o elemento */
       }
 
       .projectList_textBox {
