@@ -146,5 +146,13 @@
       align-items: center;
       justify-content: center;
     }
+
+    .certificateBox_image_box {
+      img {
+        &:active {
+          scale: 1.5 !important;
+        }
+      }
+    }
   }
 }
