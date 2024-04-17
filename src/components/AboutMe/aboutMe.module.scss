@@ -12,6 +12,32 @@
     border-radius: 1rem;
   }
 
+   a {
+    text-decoration: none;
+    color: $text-color;
+    font-size: 2.4rem;
+
+    &:hover {
+      color: $accent-color;
+    }
+
+    &:active {
+      scale: 1.1;
+    }
+  }
+
+  .aboutMe_icons_box{
+     display: flex;
+      gap: 1.5rem;
+      padding-top: 2rem;
+
+      .aboutMe_contact_icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  }
+
   .aboutMe_information_box {
     display: flex;
     justify-content: center;

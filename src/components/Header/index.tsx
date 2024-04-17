@@ -49,12 +49,12 @@ const Header: React.FC<HeaderProps> = ({ lang }) => {
         </div>
         <div className={style.header_flags_box}>
           {lang === "" || (
-            <Link href="/" className={style.header_flag}>
-              <Image src={english} alt="en" />
+            <Link href="/">
+              <Image src={english} alt="en" className={style.header_flag} />
             </Link>
           )}
           {lang === "pt" || (
-            <Link href="/pt" >
+            <Link href="/pt">
               <Image src={portuguese} alt="pt" className={style.header_flag} />
             </Link>
           )}

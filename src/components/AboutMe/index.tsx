@@ -1,6 +1,9 @@
 import Image from "next/image";
 import karlaAvatar from "@/images/avatar/karla-manga.webp";
 import style from "./aboutMe.module.scss";
+import { FaLinkedin } from "react-icons/fa";
+import { FaSquareGithub } from "react-icons/fa6";
+import { MdOutlineMailOutline } from "react-icons/md";
 
 interface AboutMeProps {
   lang: string;
@@ -72,6 +75,30 @@ const AboutMe: React.FC<AboutMeProps> = ({ lang }) => {
       <div className={style.aboutMe_information_box}>
         <h3>{name}</h3>
         {text}
+        <div className={style.aboutMe_icons_box}>
+          <a
+            href="https://www.linkedin.com/in/karlaoshikawa/?locale=en_US"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={style.aboutMe_contact_icon}
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="https://github.com/karlaoshikawa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={style.aboutMe_contact_icon}
+          >
+            <FaSquareGithub />
+          </a>
+          <a
+            href="mailto:karla_hara@hotmail.com"
+            className={style.aboutMe_contact_icon}
+          >
+            <MdOutlineMailOutline />
+          </a>
+        </div>
       </div>
     </div>
   );
