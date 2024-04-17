@@ -5,7 +5,7 @@
   flex-direction: column;
   color: $text-color;
   font-size: 1.8rem;
-  padding: 3rem;
+  padding: 3rem 0;
   border-bottom: 2px solid;
   border-image: $gradient-orange 1;
   width: 100vw;
@@ -23,7 +23,7 @@
     padding-left: 1rem;
   }
 
-  h5{
+  h5 {
     font-weight: 400;
     text-transform: uppercase;
     font-size: 1.8rem;
@@ -53,15 +53,15 @@
         margin: 1rem;
       }
 
-      .projectList_project_iframe{
+      .projectList_project_iframe {
         width: 80vw;
         height: 80vh;
 
         position: absolute;
         z-index: 10;
-         top: 50%; /* Coloca o elemento no centro vertical */
-  left: 50%; /* Coloca o elemento no centro horizontal */
-  transform: translate(-50%, -50%); /* Centraliza o elemento */
+        top: 50%; /* Coloca o elemento no centro vertical */
+        left: 50%; /* Coloca o elemento no centro horizontal */
+        transform: translate(-50%, -50%); /* Centraliza o elemento */
       }
 
       .projectList_textBox {
@@ -91,9 +91,9 @@
         display: flex;
         justify-content: space-around;
         padding: 1.5rem;
-        position: absolute; 
-        bottom: 10px; 
-        left: 50%; 
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
         transform: translateX(-50%);
         gap: 3rem;
 
@@ -125,4 +125,21 @@
       }
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column; 
+  align-items: center;
+
+.projectList_container {
+ align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+  .projectList_projects_container {
+   align-items: center;
+  justify-content: center;
+  width: 100vw;
+  }
+}
 }

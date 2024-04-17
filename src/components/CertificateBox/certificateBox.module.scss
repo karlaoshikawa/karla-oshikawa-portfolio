@@ -38,7 +38,6 @@
       font-size: 2.5rem;
       color: $background-color;
 
-      // Ajuste das posições dos pseudo-elementos
       &:before,
       &:after {
         background: linear-gradient(
@@ -72,7 +71,7 @@
         font-size: 1.8rem;
         font-weight: 400;
         border-bottom: 2px solid $accent-color;
-        position: relative; // Adicione esta linha para garantir que o conteúdo seja exibido acima dos pseudo-elementos
+        position: relative;
       }
     }
 
@@ -139,6 +138,13 @@
       &:active {
         scale: 1.1;
       }
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .certificateBox_container {
+      align-items: center;
+      justify-content: center;
     }
   }
 }

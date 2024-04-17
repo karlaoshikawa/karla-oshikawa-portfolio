@@ -68,3 +68,16 @@
   justify-content: center;
   display: flex;
 }
+@media only screen and (max-width: 768px) {
+.container{
+  height: 8rem;
+}
+.slider {
+  height: 6rem;
+  font-weight: 400;
+}
+
+.slide{
+  width: 28rem;
+}
+}

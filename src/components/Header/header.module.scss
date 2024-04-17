@@ -11,7 +11,6 @@
   align-items: center;
   justify-content: space-between;
   z-index: 1000;
-
   background-color: $background-color;
 
   a {
@@ -68,15 +67,50 @@
 
     .header_flags_box {
       padding: 0.5rem 3rem 0 0;
-      
 
       .header_flag {
         width: 4rem;
         height: 2.1rem;
         object-fit: cover;
         padding-right: 0.8rem;
-        
       }
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .header_logo_box {
+      padding-left: 2rem;
+    }
+
+    .header_rightItems_box {
+      gap: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .header_container {
+      height: auto;
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    .header_icons_box{
+      padding-right: 1rem;
+    }
+
+    .header_logo_box {
+      padding-left: 1.5rem;
+    }
+
+    .header_rightItems_box {
+      gap: 0.5rem;
+    }
+
+    .header_flags_box {
+      padding-right: 1.2rem !important; 
     }
   }
 }

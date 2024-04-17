@@ -28,4 +28,17 @@
     border-bottom: 2px solid $accent-color;
     padding: 0 1rem;
   }
+
+
+@media only screen and (max-width: 768px) {
+  .sectionBar_box {
+    height: 5rem;
+    width: 25rem;
+    padding-left: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
 }

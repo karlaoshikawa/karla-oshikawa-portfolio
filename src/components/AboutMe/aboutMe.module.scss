@@ -3,16 +3,18 @@
 .aboutMe_container {
   max-width: 120rem;
   display: flex;
-  padding: 5rem 0;
+  flex-direction: column; 
+  padding: 5rem 2rem; 
   color: $text-color;
 
   img {
-    width: 40rem;
+    width: 100%;
+    max-width: 40rem; 
     height: auto;
     border-radius: 1rem;
   }
 
-   a {
+  a {
     text-decoration: none;
     color: $text-color;
     font-size: 2.4rem;
@@ -26,23 +28,24 @@
     }
   }
 
-  .aboutMe_icons_box{
-     display: flex;
-      gap: 1.5rem;
-      padding-top: 2rem;
+  .aboutMe_icons_box {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+  }
 
-      .aboutMe_contact_icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+  .aboutMe_contact_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .aboutMe_information_box {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 5rem;
+    padding-left: 0; 
+    padding-top: 3rem; 
+    text-align: center; 
 
     h3 {
       font-size: 3.6rem;
@@ -54,5 +57,23 @@
     p {
       font-size: 1.8rem;
     }
+  }
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+    align-items: center; 
+    padding: 5rem 0; 
+
+    .aboutMe_information_box {
+      padding-left: 5rem; 
+      text-align: left; 
+    }
+
+    .aboutMe_icons_box {
+    display: flex;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    justify-content: start;
+  }
   }
 }

@@ -7,7 +7,16 @@
 
   iframe {
     padding-top: 5rem;
-    height: 100rem;
+    height: 90vh;
+    width: 100vw;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero_container iframe {
+    padding-top: 5rem;
+    height: 55vh;
     width: 100vw;
     border: none;
   }
