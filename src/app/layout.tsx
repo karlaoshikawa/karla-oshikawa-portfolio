@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="app/favicon.ico" />
       </Head>
       <body className={inter.className}>{children}</body>
     </>

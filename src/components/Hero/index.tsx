@@ -12,7 +12,6 @@ const Hero: React.FC = () => {
       ) {
         if (event.data.type === "navigateToSection") {
           const sectionId = event.data.sectionId;
-          console.log("id",sectionId);
           
           const sectionElement = document.getElementById(sectionId);
           if (sectionElement) {
