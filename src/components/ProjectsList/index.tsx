@@ -21,7 +21,7 @@ const ProjectList: React.FC<ProjectListProps> = ({ type }) => {
  const handleImageClick = (id: string) => {
    setShowIframeMap((prevState) => ({
      ...prevState,
-     [id]: !prevState[id], // Alterna o estado para o projeto com o id correspondente
+     [id]: !prevState[id],
    }));
  };
 
@@ -53,16 +53,18 @@ const ProjectList: React.FC<ProjectListProps> = ({ type }) => {
               <p>Stacks:</p>
               <h5>{project.stacks.replace(/,/g, " |")}</h5>
               <div className={style.projectList_button_box}>
-                <div className={style.projectList_button}>
-                  <SlGlobe />
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Deploy
-                  </a>
-                </div>
+                {project.url=== "" ||
+                  <div className={style.projectList_button}>
+                    <SlGlobe />
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Deploy
+                    </a>
+                  </div>
+                }
                 <div className={style.projectList_button}>
                   <VscGithub />
                   <a
